@@ -1,0 +1,24 @@
+.header-wrapper {
+    width: 100%;
+    min-height: 5rem;
+    text-align: center;
+    background: lightgoldenrodyellow;
+    .logo-wrapper {
+    }
+    input[type=text] {
+        // height: 2rem;
+        padding: 5px;
+        border: 0;
+        background: rgba(98, 198, 245, 0.521);
+        border-radius: 1rem;
+        margin: 0.3rem;
+    }
+    .sub-header {
+        width: 50%;
+        background: crimson;
+        border: 1px solid black;
+        margin: 0 auto;
+        text-shadow: lightgrey;
+        box-shadow: 2px 2px lightsalmon;
+    }
+}
