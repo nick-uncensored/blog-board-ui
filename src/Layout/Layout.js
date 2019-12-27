@@ -1,16 +1,25 @@
 import React from 'react'
-import Header from './Header/Header'
+
+
+import FeatureCard from '../components/FeatureCard/FeatureCard'
 import './Layout.scss'
+
 
 const Layout = (props) => {
     return (
         <div className="layout-wrapper">
-            <Header />
+            {/* <Header /> */}
             <section>
-                <h1>showoff</h1>
+               {/* <FeatureCard /> */}
             </section>
         </div>
     )
 }
 
 export default Layout
+
+/*
+topics.map(topic => {
+
+})
+*/

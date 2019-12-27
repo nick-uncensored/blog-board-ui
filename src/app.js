@@ -1,25 +1,46 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-// import { BrowserRouter, Switch, Route } from 'react-router-dom'
-// import 'bulma'
-import './styles/styles.scss'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Layout from './Layout/Layout'
+import Header from './Layout/Header/Header'
+import Bio from './Layout/Bio/Bio'
+import Footer from './Layout/Footer/Footer'
+import Navbar from './Layout/Navbar/Navbar'
+import './styles/styles.scss'
 
 class App extends Component {
   render() {
     return(
-      <div className="app-wrapper">
-        
-      <Layout />
-      </div>
+      <BrowserRouter>
+      <main>
+        {/* <Nav /> */}
+        <Header />
+
+        <Switch>
+        <Route path="/bio" component={Bio}/>
+          {/* <Route path="/jobs/:id" component={JobDetails}/>
+          <Route path="/jobs" component={JobsIndex}/> */}
+          <Route exact path="/" component={Layout}/>
+        </Switch>
+        <Footer />
+      </main>
+    </BrowserRouter>
     )
   }
 }
 
 ReactDOM.render(
-  <App />,
+  <Navbar />,
   document.getElementById('root')
 )
+
+class Test extends Component {
+  render() {
+    return(
+      <Navbar />
+    )
+  }
+}
 
 
 // import Homepage from './components/common/Homepage'

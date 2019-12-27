@@ -1,0 +1,65 @@
+.cards {
+       display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 1rem;
+grid-row-gap: 1rem;
+
+.card {
+    border: 1px solid black;
+    background-color: blue; 
+    .topic {
+        padding: 5px;
+        h4 {
+            color: rgba(4, 53, 20, 0.61);
+            color: white;
+        }
+    }
+    span.feature {
+        padding: 0.5rem;
+        text-align: justify;
+        p {
+            font-size: 0.9rem;
+            color: white;
+            text-align: left;
+        }
+    }
+    button {
+        // position: relative;
+        background: rgb(7, 255, 234);
+        color: honeydew;
+        font-size: 1.3rem;
+        text-align: center;
+        margin:0.3rem;
+        padding: 0.3rem;
+        border: none;
+        border-radius: 10px;
+    }
+    }
+
+}
+/*
+.cards {
+ 
+display: grid;
+ 
+grid-template-columns: repeat(3, 1fr);
+ 
+grid-auto-rows: auto;
+ 
+grid-gap: 1rem;
+ 
+}
+ 
+&nbsp;
+ 
+.card {
+ 
+border: 2px solid #e7e7e7;
+ 
+border-radius: 4px;
+ 
+padding: .5rem;
+ 
+}
+*/

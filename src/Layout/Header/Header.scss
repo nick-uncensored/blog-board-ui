@@ -8,17 +8,20 @@
     input[type=text] {
         // height: 2rem;
         padding: 5px;
-        border: 0;
-        background: rgba(98, 198, 245, 0.521);
+        border: 1px solid skyblue;
+        background: rgba(211, 211, 211, 0.37);
         border-radius: 1rem;
-        margin: 0.3rem;
+        //margin: 0.3rem;
     }
     .sub-header {
+        position: absolute;
         width: 50%;
-        background: crimson;
-        border: 1px solid black;
-        margin: 0 auto;
+        right: 27%;
+        //left: 0;
+        background: rgb(199, 141, 152);
+        color: #fff;        
+        border: 1px solid indianred;
         text-shadow: lightgrey;
-        box-shadow: 2px 2px lightsalmon;
+        font-size: 0.8rem;
     }
 }
